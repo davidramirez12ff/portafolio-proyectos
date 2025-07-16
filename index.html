@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #000000, #05044a, #000000);
+    }
+  </style>
+</head>
+<body class="text-white">
+  <header class="bg-gray-800 shadow p-4 sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
+      <h1 class="text-xl font-bold text-center sm:text-left">Portafolio de Proyectos</h1>
+    
+  </header>
+
+  <main class="py-10 px-4 max-w-6xl mx-auto">
+    <!-- Perfil Lateral -->
+   <section class="bg-gray-800 rounded-xl p-6 my-10 text-center mx-auto w-full max-w-xs sm:max-w-sm" data-aos="fade-up">
+  <img src="img/perfil.jpg"
+     class="w-48 h-50 object-cover mx-auto shadow-lg border-4 border-white rounded-xl"
+     alt="Foto de perfil">
+  <h2 class="text-2xl font-bold">Yesid Quiceno</h2>
+  <p class="text-purple-400 text-sm sm:text-base">Tecnologo en Dibujo y Modelado arquitectónico y Ingeniería</p>
+  <p class="text-xs text-gray-400 mt-2">📍 Cali, Colombia</p>
+  <div class="mt-3 text-sm leading-5">
+    <p>📧 yesidcorreo@email.com</p>
+    <p>📱 +57 317 2512133</p>
+  </div>
+  
+</section>
+<!-- Sección de herramientas -->
+<section class="my-12 text-center" data-aos="fade-up">
+  <h3 class="text-2xl font-bold mb-6 text-white">Herramientas que manejo</h3>
+  <div class="flex flex-wrap justify-center items-center gap-8">
+    
+    <!-- AutoCAD -->
+    <div class="flex flex-col items-center transition-transform transform hover:scale-110 hover:brightness-110 duration-300">
+      <img src="png/autocad.png" alt="AutoCAD" class="w-24.5 h-20 object-contain mb-2 drop-shadow-xl">
+    </div>
+
+    <!-- Revit -->
+    <div class="flex flex-col items-center transition-transform transform hover:scale-110 hover:brightness-110 duration-300">
+      <img src="png/revit.png" alt="Revit" class="w-28 h-23 object-contain mb-2 drop-shadow-xl">
+    </div>
+
+    <!-- 3ds Max -->
+    <div class="flex flex-col items-center transition-transform transform hover:scale-110 hover:brightness-110 duration-300">
+      <img src="png/3dsmas.png" alt="3ds Max" class="w-29 h-24 object-contain mb-2 drop-shadow-xl">
+    </div>
+
+    <!-- Photoshop -->
+    <div class="flex flex-col items-center transition-transform transform hover:scale-110 hover:brightness-110 duration-300">
+      <img src="png/photoshop.png" alt="Photoshop" class="w-29 h-24 object-contain mb-2 drop-shadow-xl">
+    </div>
+
+    <!-- Illustrator -->
+    <div class="flex flex-col items-center transition-transform transform hover:scale-110 hover:brightness-110 duration-300">
+      <img src="png/illustrator.png" alt="Illustrator" class="w-29 h-24 object-contain mb-2 drop-shadow-xl">
+    </div>
+  </div>
+</section>
+
+<section class="mb-12" data-aos="fade-up">
+  <h2 class="text-3xl font-bold mb-6 text-center">Galería de Proyecto </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+    <!-- Proyecto Revit -->
+    <a href="revit1/revit1.html" class="relative group overflow-hidden rounded-lg shadow-lg">
+      <img src="img/revit.jpg" alt="Proyecto Revit" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+        <p class="text-white text-lg font-semibold">Proyecto Revit</p>
+      </div>
+    </a>
+
+    <!-- Proyecto AutoCAD -->
+    <a href="autocad1/autocad1.html" class="relative group overflow-hidden rounded-lg shadow-lg">
+      <img src="img/autocad.jpg" alt="Proyecto AutoCAD" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+        <p class="text-white text-lg font-semibold">Proyecto AutoCAD</p>
+      </div>
+    </a>
+
+    <!-- Proyecto 3Ds Max -->
+    <a href="3dmax/3dmax1.html" class="relative group overflow-hidden rounded-lg shadow-lg">
+      <img src="img/3dmax.jpg" alt="Proyecto 3Ds Max" class="w-full h-auto transition-transform duration-500 group-hover:scale-105">
+      <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+        <p class="text-white text-lg font-semibold">Proyecto 3Ds Max</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  <footer class="bg-gray-800 text-gray-300 text-center py-4 text-sm">
+    <p>&copy; 2025 Yesid David Quiceno Ramirez | Portafolio de Proyectos</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Proyectos AutoCAD</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .thumbnail {
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+    .thumbnail:hover {
+      border: 2px solid #7c3aed;
+      transform: scale(1.05);
+    }
+    .thumbnail.active {
+      border: 2px solid #7c3aed;
+    }
+    .main-image {
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+    .scale-110 {
+      transform: scale(1.1);
+    }
+    .lightbox-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      cursor: zoom-out;
+    }
+    .lightbox-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white p-6 min-h-screen">
+
+  <a id="volverBtn" href="../index.html" class="fixed top-6 left-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl z-50">
+    ← Volver al portafolio
+  </a>
+
+  <h1 class="text-4xl font-bold text-center mb-12">Galería de Proyectos AutoCAD</h1>
+
+  <!-- PROYECTO 1 -->
+  <section class="max-w-6xl mx-auto mb-20">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div id="viewer1">
+        <img src="mini/autocad pro 1.PNG" class="main-image w-full rounded-lg shadow-xl object-cover" id="main1">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-4">Levantamiento Arquitectónico de Centro Educativo – SENA Norte</h2>
+        <p class="text-gray-300 mb-4">
+          Este proyecto consiste en el levantamiento arquitectónico detallado de un centro de formación del SENA ubicado en la zona norte, representado mediante planos de localización, planta general y despieces arquitectónicos. El diseño incluye múltiples ambientes educativos, cafetería, zonas verdes, parqueaderos, servicios sanitarios, bodega, enfermería y áreas comunes, distribuidos sobre una superficie de aproximadamente 3.054 m².
+        <p class="text-gray-300 mb-4">
+          El modelo fue desarrollado aplicando técnicas digitales de representación CAD y bajo los lineamientos de metodología BIM, cumpliendo con los estándares técnicos requeridos para la gestión y documentación de proyectos de construcción institucional.
+        </p>
+        <ul class="text-gray-400 list-disc pl-6 text-sm">
+          <li>Modelado completo en AutoCAD</li>
+          <li>Documentación ejecutiva</li>
+          <li>Visualización 2D</li>
+        </ul>
+        <a href="pdf cad/Levantamiento Arquitectónico de Centro Educativo -SENA Norte Y.D.Q.R..pdf" download class="inline-flex items-center gap-2 mt-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl w-max">
+          📄 Descargar PDF
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 flex gap-4 flex-wrap justify-center">
+      <img src="mini/autocad pro 1.PNG" class="w-24 h-24 rounded thumbnail active" onclick="showImage(this, 'viewer1')">
+      <img src="mini/autocad pro 2.PNG" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer1')">
+      <img src="mini/autocad pro 3.PNG" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer1')">
+      <img src="mini/autocad pro 4.PNG" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer1')">
+    </div>
+  </section>
+
+   <!-- PROYECTO 2 -->
+  <section class="max-w-6xl mx-auto mb-20">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div id="viewer2">
+        <img src="mini/AUTO.PRO.4.PNG" class="main-image w-full rounded-lg shadow-xl object-cover" id="main2">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-4">Proyecto Arquitectónico Residencial – Levantamiento y Modelado BIM </h2>
+        <p class="text-gray-300 mb-4">
+Este proyecto corresponde al levantamiento arquitectónico completo de una vivienda unifamiliar de tres niveles: semisótano, planta baja, planta alta y azotea. El diseño incluye espacios funcionales y bien distribuidos como sala formal, comedor, cocina, múltiples recámaras con vestidores y baños privados, estancia familiar, lavandería, área de juegos con bar, cochera y áreas exteriores como jardín, balcón y azador.        </p>
+        <ul class="text-gray-400 list-disc pl-6 text-sm">
+          <li>Modelado completo en AutoCAD</li>
+          <li>Documentación ejecutiva</li>
+          <li>Visualización 2d</li>
+        </ul>
+        <a href="pdf cad/Proyecto Arquitectónico Residencial – Levantamiento y Modelado BIM  Y.D.Q.R..pdf" download class="inline-flex items-center gap-2 mt-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl w-max">
+          📄 Descargar PDF
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 flex gap-4 flex-wrap justify-center">
+      <img src="mini/AUTO.PRO.2.PNG" class="w-24 h-24 rounded thumbnail active" onclick="showImage(this, 'viewer2')">
+      <img src="mini/AUTO.PRO.3.PNG" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer2')">
+      <img src="mini/AUTO.PRO.4.PNG" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer2')">
+      <img src="mini/AUTO.PRO.5.PNG" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer2')">
+    </div>
+  </section>
+  
+     <!-- PROYECTO 3 -->
+  <section class="max-w-6xl mx-auto mb-20">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div id="viewer3">
+        <img src="mini/ato 2.png" class="main-image w-full rounded-lg shadow-xl object-cover" id="main3">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-4">Vivienda Unifamiliar Moderna </h2>
+        <p class="text-gray-300 mb-4">
+        Este proyecto arquitectónico corresponde al diseño de una vivienda unifamiliar de un nivel, desarrollado como parte del programa de formación en Dibujo y Modelado Arquitectónico del SENA. La propuesta integra una distribución funcional y equilibrada, con espacios definidos para el confort residencial, incluyendo área social, zona privada, y servicios.
+        <ul class="text-gray-400 list-disc pl-6 text-sm">
+          <li>Modelado completo en AutoCAD</li>
+          <li>Documentación institucional</li>
+          <li>Visualización 2d</li>
+        </ul>
+        <a href="pdf cad/Vivienda Unifamiliar Moderna – Y.D.Q.R.pdf" download class="inline-flex items-center gap-2 mt-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl w-max">
+        📄 Descargar PDF
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 flex gap-4 flex-wrap justify-center">
+      <img src="mini/ato 1.png" class="w-24 h-24 rounded thumbnail active" onclick="showImage(this, 'viewer3')">
+      <img src="mini/ato 4.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer3')">
+      <img src="mini/ato 3.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer3')">
+      <img src="mini/ato 5.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer3')">
+      <img src="mini/ato 2.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer3')">
+    </div>
+  </section>
+
+       <!-- PROYECTO 4 -->
+  <section class="max-w-6xl mx-auto mb-20">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div id="viewer4">
+        <img src="mini/5 auto.png" class="main-image w-full rounded-lg shadow-xl object-cover" id="main4">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-4">Residencia Urbana de Dos Niveles </h2>
+        <p class="text-gray-300 mb-4">
+        Este proyecto corresponde al diseño arquitectónico detallado de una vivienda urbana de dos pisos, desarrollado por Yesid David Quiceno Ramírez como parte del proceso formativo en Dibujo y Modelado de Proyectos de Arquitectura e Ingeniería del SENA – Regional Valle.
+        <p class="text-gray-300 mb-4">
+          La vivienda está concebida para ofrecer un alto grado de funcionalidad y confort, integrando espacios residenciales distribuidos estratégicamente en dos niveles, con énfasis en ventilación, iluminación natural y acabados modernos. Entre los espacios se incluyen recámaras, cocina, baños, zonas sociales y de servicio.
+        <ul class="text-gray-400 list-disc pl-6 text-sm">
+          <li>Modelado completo en AutoCAD</li>
+          <li>Documentación institucional</li>
+          <li>Visualización 2d</li>
+        </ul>
+        <a href="pdf cad/ARQCAD_261413_YESID_QUICENO.pdf" download class="inline-flex items-center gap-2 mt-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl w-max">
+        📄 Descargar PDF
+        </a>
+      </div>
+    </div>
+    <div class="mt-6 flex gap-4 flex-wrap justify-center">
+      <img src="mini/1 auto.png" class="w-24 h-24 rounded thumbnail active" onclick="showImage(this, 'viewer4')">
+      <img src="mini/2 auto.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer4')">
+      <img src="mini/3 auto.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer4')">
+      <img src="mini/4 auto.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer4')">
+      <img src="mini/5 auto.png" class="w-24 h-24 rounded thumbnail" onclick="showImage(this, 'viewer4')">
+    </div>
+  </section>
+  
+   <!-- PROYECTO 2 -->
+  <section class="max-w-6xl mx-auto mb-20">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div id="viewer2">
+        <img src="mini/logo r.jpg" class="main-image w-full rounded-lg shadow-xl object-cover" id="main2">
+      </div>
+<div class="inline-block bg-yellow-100 border-l-4 border-yellow-500 text-black px-6 py-4 rounded-lg shadow-md max-w-3xl mx-auto">
+  <div class="flex items-start gap-3">
+    <svg class="w-6 h-6 text-yellow-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01M12 6a9 9 0 110 18 9 9 0 010-18z" />
+    </svg>
+    <div>
+      <p class="text-base font-semibold mb-1">Nota importante:</p>
+      <p class="text-sm leading-relaxed">
+        Por razones de confidencialidad establecidas con la empresa <strong>Celsia</strong> y sus respectivos clientes, no es posible publicar públicamente los planos realizados en AutoCAD de estos proyectos. Para proteger la privacidad de los mismos, únicamente se incluiran los nombres y la ubicaciòn de los trabajos realizados.
+      </p>
+      <p class="text-sm mt-2">Estos proyectos fueron desarrollados en las siguientes ubicaciones:</p>
+      <ul class="list-disc pl-6 text-sm mt-1">
+        <li><strong>Cemsa T3</strong> – Bogotá</li>
+        <li><strong>Bancolombia Niquía</strong> – Medellín</li>
+        <li><strong>Otobo</strong> – Cali</li>
+        <li><strong>Unidad Tierra Linda de la Pradera</strong> – Cali</li>
+        <li><strong>Unidad Tierra Linda de la Planicie</strong> – Cali</li>
+  </section>
+ 
+
+  <script>
+    function showImage(thumbnail, containerId) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = `<img src="${thumbnail.src}" class="main-image w-full rounded-lg shadow-xl object-cover">`;
+      setActiveThumbnail(thumbnail);
+    }
+
+    function setActiveThumbnail(activeThumb) {
+      const allThumbs = activeThumb.parentElement.querySelectorAll('.thumbnail');
+      allThumbs.forEach(thumb => thumb.classList.remove('active'));
+      activeThumb.classList.add('active');
+    }
+
+    // Lightbox para zoom al hacer clic en imagen principal
+    document.addEventListener("click", function (e) {
+      const clickedImage = e.target.closest(".main-image");
+      if (clickedImage) {
+        const overlay = document.createElement("div");
+        overlay.classList.add("lightbox-overlay");
+
+        const zoomedImg = document.createElement("img");
+        zoomedImg.src = clickedImage.src;
+
+        overlay.appendChild(zoomedImg);
+        document.body.appendChild(overlay);
+
+        overlay.addEventListener("click", function () {
+          document.body.removeChild(overlay);
+        });
+      }
+    });
+
+    // Ocultar/mostrar el botón de volver al hacer scroll
+    let prevScrollPos = window.pageYOffset;
+    const volverBtn = document.getElementById("volverBtn");
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      volverBtn.style.top = (prevScrollPos > currentScrollPos) ? "1.5rem" : "-100px";
+      volverBtn.style.opacity = (prevScrollPos > currentScrollPos) ? "1" : "0";
+      prevScrollPos = currentScrollPos;
+    };
+  </script>
+
+</body>
+</html>
